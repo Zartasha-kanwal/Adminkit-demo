@@ -310,7 +310,7 @@ export default function Adminkit() {
        </div>
        <div className="flex flex-row gap-5  items-center">
          <h1>Invite a friend</h1>
-         <button className="bg-blue-500 text-white w-28 rounded-sm h-8 font-semibold">New Project</button>
+         <button className="bg-blue-500 text-white rounded-sm px-3 py-2 sm:px-4 sm:py-2 md:px-5 md:py-3 text-sm sm:text-base md:text-lg font-semibold">New Project</button>
        </div>
      </div>
 
