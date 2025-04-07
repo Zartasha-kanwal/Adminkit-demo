@@ -440,7 +440,7 @@ export default function Adminkit() {
     </div>
         
     <div className="flex flex-col items-center justify-center mt-9">
-      <div className="bg-white rounded-lg w-full max-w-md">
+      <div className="bg-white rounded-lg w-full ">
         <div className="flex justify-between items-center">
           <button onClick={() => setCurrentDate(addDays(currentDate, -30))} className="p-2 bg-gray-200 rounded">
           ◀
@@ -459,7 +459,7 @@ export default function Adminkit() {
         {/* Days */}
         <div className="grid grid-cols-7 gap-1 text-center">
           {days.map((day, index) => (
-          <div key={index} className="p-3 border rounded-md bg-gray-100">{format(day, "d")}</div>
+          <div key={index} className=" border rounded-md bg-gray-100">{format(day, "d")}</div>
           ))}
           </div>
         </div>
@@ -467,9 +467,9 @@ export default function Adminkit() {
       </div>
    </div>
    {/*Real-Time Section */}
-   <div className="px-20 mt-8 bg-white shadow-lg">
-      <div className="flex flex-row px-2 py-2 justify-between items-center">
-        <h1 className="font-semibold text-[#afadad] text-lg mt-2 ml-2">Real-Time</h1>
+   <div className="lg:px-20 md:px-14 px-8 mt-8 bg-white shadow-lg">
+      <div className="flex flex-row justify-between items-center">
+        <h1 className="font-semibold text-[#afadad] text-lg">Real-Time</h1>
         <div className="relative cursor-pointer" onClick={() => setDropdownOpen2(!dropdownOpen2)}><i className="fa-solid fa-ellipsis"></i>
          {dropdownOpen2 && (
          <div className="absolute w-40 right-3 shadow-[0_0_10px_rgba(0,0,0,0.25)] cursor-pointer">
@@ -488,173 +488,8 @@ export default function Adminkit() {
       </div>
     </div>
     </div>
-
-    <div className="grid lg:grid-cols-[70%_30%] grid-cols-1 px-10 mt-11 gap-4">
-      <div className="shadow-lg">
-        <div className="flex flex-row px-2 py-2 justify-between items-center">
-          <h1 className="font-semibold text-[#afadad] text-lg mt-2 ml-2">Latest Projects</h1>
-          <div className="relative cursor-pointer" onClick={() => setDropdownOpen3(!dropdownOpen3)}><i className="fa-solid fa-ellipsis"></i>
-          {dropdownOpen3 && (
-          <div className="absolute w-40 right-3 bg-white shadow-[0_0_10px_rgba(0,0,0,0.25)] cursor-pointer">
-            <h4 className="pl-2 hover:bg-slate-300">Action</h4>
-            <h4 className="pl-2 hover:bg-slate-300">Another action</h4>
-            <h4 className="pl-2 hover:bg-slate-300 mb-2">Something else here</h4>
-          </div>
-          )}
-         </div>
-       </div>
-       <div>
-         <table class="min-w-full">
-           <thead>
-           <tr class=" text-left">
-           <th class=" px-4 py-2">Name</th>
-           <th class=" px-4 py-2">Company</th>
-           <th class=" px-4 py-2">Author</th>
-           <th class=" px-4 py-2">Status</th>
-           <th class=" px-4 py-2">Action</th>
-           </tr>
-           </thead>
-           <tbody>
-           <tr class="bg-white">
-           <td class=" px-4 py-2">
-            <div className="flex flex-row gap-4">
-             <img src="https://demo.adminkit.io/img/icons/brand-1.svg"/>
-             <div className="flex flex-col">
-               <strong>Project Apollo</strong>
-               <h6 className="text-sm text-[#495057BF]">Web, UI/UX Design</h6>
-              </div>
-            </div>
-           </td>
-           <td class=" px-4 py-2">
-            <strong>Lechters</strong>
-            <div className="text-[#495057BF]">Real Estate</div>
-           </td>
-           <td class=" px-4 py-2">
-           <strong>Vanessa Tucker</strong>
-           <div className="text-[#495057BF]">HTML, JS, React</div>
-           </td>
-           <td class=" px-4 py-2">
-            <span className="text-[#495057BF]">65%</span>
-            <div class="w-full  rounded-full h-2.5 bg-[#bdf4e3]">
-            <div class="bg-[#1CBB8C] h-2.5 rounded-full w-[65%]"></div></div>
-           </td>
-           <td class=" px-4 py-2">
-           <button class="bg-white text-black hover:bg-slate-400 px-3 py-1 rounded">View</button>
-           </td>
-           </tr>
-           <tr>
-           <td class=" px-4 py-2">
-            <div className="flex flex-row gap-4">
-             <img src="https://demo.adminkit.io/img/icons/brand-2.svg"/>
-             <div className="flex flex-col">
-               <strong>Project Bongo</strong>
-               <h6 className="text-sm text-[#495057BF]">Web</h6>
-              </div>
-            </div>
-           </td>
-           <td class=" px-4 py-2 ">
-            <strong>Cellophane Transportation</strong>
-            <div className="text-[#495057BF]">Transportation</div>
-           </td>
-           <td class=" px-4 py-2">
-           <strong>William Harris</strong>
-           <div className="text-[#495057BF]">HTML, JS, Vue</div>
-           </td>
-           <td class=" px-4 py-2">
-            <span className="text-[#495057BF]">33%</span>
-            <div class="w-full  rounded-full h-2.5 bg-[#edcaca]">
-            <div class="bg-red-600 h-2.5 rounded-full w-[33%]"></div></div>
-           </td>
-           <td class=" px-4 py-2">
-           <button class="bg-white text-black hover:bg-slate-400 px-3 py-1 rounded">View</button>
-           </td>
-           </tr>
-           <tr>
-           <td class=" px-4 py-2">
-            <div className="flex flex-row gap-4">
-             <img src="https://demo.adminkit.io/img/icons/brand-3.svg"/>
-             <div className="flex flex-col">
-               <strong>Project Bongo</strong>
-               <h6 className="text-sm text-[#495057BF]">Web</h6>
-              </div>
-            </div>
-           </td>
-           <td class=" px-4 py-2 ">
-            <strong>Project Canary</strong>
-            <div className="text-[#495057BF]">Web, UI/UX Design</div>
-           </td>
-           <td class=" px-4 py-2">
-           <strong>Sharon,Lessman</strong>
-           <div className="text-[#495057BF]">HTML,JS,Laravel</div>
-           </td>
-           <td class=" px-4 py-2">
-            <span className="text-[#495057BF]">50%</span>
-            <div class="w-full  rounded-full h-2.5 bg-[#fad9ab]">
-            <div class="bg-orange-500 h-2.5 rounded-full w-[50%]"></div></div>
-           </td>
-           <td class=" px-4 py-2">
-           <button class="bg-white text-black hover:bg-slate-400 px-3 py-1 rounded">View</button>
-           </td>
-           </tr>
-           <tr>
-           <td class=" px-4 py-2">
-            <div className="flex flex-row gap-4">
-             <img src="https://demo.adminkit.io/img/icons/brand-4.svg"/>
-             <div className="flex flex-col">
-               <strong>Project Edison</strong>
-               <h6 className="text-sm text-[#495057BF]">UI/UX Design</h6>
-              </div>
-            </div>
-           </td>
-           <td class=" px-4 py-2 ">
-            <strong>Affinity Investment Group</strong>
-            <div className="text-[#495057BF]">Finance</div>
-           </td>
-           <td class=" px-4 py-2">
-           <strong>Vanessa Tucker</strong>
-           <div className="text-[#495057BF]">HTML, JS, React</div>
-           </td>
-           <td class=" px-4 py-2">
-            <span className="text-[#495057BF]">80%</span>
-            <div class="w-full  rounded-full h-2.5 bg-[#d4f7ed]">
-            <div class="bg-[#1CBB8C] h-2.5 rounded-full w-[80%]"></div></div>
-           </td>
-           <td class=" px-4 py-2">
-           <button class="bg-white text-black hover:bg-slate-400 px-3 py-1 rounded">View</button>
-           </td>
-           </tr>
-           <tr>
-           <td class=" px-4 py-2">
-            <div className="flex flex-row gap-4">
-             <img src="https://demo.adminkit.io/img/icons/brand-5.svg"/>
-             <div className="flex flex-col">
-               <strong>Project Indigo</strong>
-               <h6 className="text-sm text-[#495057BF]">Web,UI/UX Design</h6>
-              </div>
-            </div>
-           </td>
-           <td class=" px-4 py-2 ">
-            <strong>Konsili</strong>
-            <div className="text-[#495057BF]">Retail</div>
-           </td>
-           <td class=" px-4 py-2">
-           <strong>Christina Mason</strong>
-           <div className="text-[#495057BF]">HTML, JS, Vue</div>
-           </td>
-           <td class=" px-4 py-2">
-            <span className="text-[#495057BF]">78%</span>
-            <div class="w-full  rounded-full h-2.5 bg-[#cad7fe]">
-            <div class="bg-blue-600 h-2.5 rounded-full w-[78%]"></div></div>
-           </td>
-           <td class=" px-4 py-2">
-           <button class="bg-white text-black hover:bg-slate-400 px-3 py-1 rounded">View</button>
-           </td>
-           </tr>
-           </tbody>
-         </table>
-        </div>
-      </div>
-      <div className="bg-white">
+     {/*Latest projects */}
+    <div className="bg-white lg:px-20 md:px-14 px-8">
        <div className="flex flex-row px-2 py-2 justify-between items-center">
           <h1 className="font-semibold text-[#afadad] text-lg mt-2 ml-2">Latest Projects</h1>
           <div className="relative cursor-pointer" onClick={() => setDropdownOpen4(!dropdownOpen4)}><i className="fa-solid fa-ellipsis"></i>
@@ -679,11 +514,10 @@ export default function Adminkit() {
           </ResponsiveContainer>
        </div>
       </div>
-    </div>
 
     <footer className="px-4 text-[#afadad] mt-10 mb-3 flex flex-row justify-between cursor-pointer">
       <strong className="hover:underline">AdminKit ©</strong>
-      <ul className="flex flex-row gap-4">
+      <ul className="flex flex-row gap-2">
         <li className="hover:underline">Support</li>
         <li className="hover:underline">Help Center</li>
         <li className="hover:underline" >Privacy</li>
