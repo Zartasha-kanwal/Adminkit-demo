@@ -439,7 +439,7 @@ export default function Adminkit() {
       </div>
     </div>
         
-    <div className="flex flex-col items-center justify-center mt-9">
+    <div className="flex flex-col items-center justify-center mt-9 px-2 sm:px-4 w-full max-w-full">
       <div className="bg-white rounded-lg w-full ">
         <div className="flex justify-between items-center">
           <button onClick={() => setCurrentDate(addDays(currentDate, -30))} className="p-2 bg-gray-200 rounded">
@@ -453,7 +453,7 @@ export default function Adminkit() {
         {/* Day Names */}
         <div className="grid grid-cols-7 text-center font-semibold">
           {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-          <div key={day} className="p-2">{day}</div>
+          <div key={day} >{day}</div>
           ))}
         </div>
         {/* Days */}
