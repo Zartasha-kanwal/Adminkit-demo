@@ -670,7 +670,7 @@ export default function Adminkit() {
       </div>
 
       {/*Sales & graph section */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 h-1/2 px-20 gap-4">
+      <div className="grid lg:grid-cols-2 grid-cols-1 h-1/2 lg:px-20 px-2 gap-4">
         <div className=" grid md:grid-cols-2 grid-cols-1 gap-3">
           <div className="h-[154px] p-[30px] shadow-xl">
             <div className="flex flex-row items-center justify-between font-semibold">
@@ -831,7 +831,7 @@ export default function Adminkit() {
       </div>
 
       {/*Broswer & Calender */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 h-1/2 lg:px-20 gap-4 mt-10">
+      <div className="grid lg:grid-cols-2 grid-cols-1 h-1/2 lg:px-20 px-2 gap-4 mt-10">
         {/*Broswer usage area */}
         <div className="shadow-lg bg-white">
           <h1 className="font-semibold text-[#afadad] text-lg mt-2 ml-2">
