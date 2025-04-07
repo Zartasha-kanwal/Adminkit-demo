@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+
+import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -110,7 +110,7 @@ export default function Adminkit() {
     <section className="bg-[#f6f5f5]">
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-[100vh] overflow-y-auto bg-gray-800 text-white w-64 p-5 transform ${
+        className={`fixed top-0 bottom-0 left-0 z-30 h-auto  overflow-y-auto bg-gray-800 text-white w-64 p-5 transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
@@ -505,7 +505,7 @@ export default function Adminkit() {
           </button>
         </div>
       </div>
-      <nav className="flex items-center justify-between bg-white shadow-lg p-4 w-full  text-white sticky top-0 z-20">
+      <nav className="flex items-center justify-between bg-white shadow-lg p-4 w-full  text-white sticky top-0 z-40">
         {/* Menu Icon */}
         <div className="relative">
           <button
