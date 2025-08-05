@@ -1,4 +1,4 @@
-# 📊 Adminkit Dashboard Demo
+# 📊 Adminkit Dashboard
 
 ![Dashboard Screenshot](Adminkit.png)
 
