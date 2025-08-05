@@ -1,5 +1,7 @@
 # 📊 Adminkit Dashboard Demo
 
+![Dashboard Screenshot](Adminkit.png)
+
 A modern, responsive **Admin Dashboard UI** built with **React.js**, **Chart.js**, and **Tailwind CSS**. This project showcases data visualization and a sleek layout inspired by professional admin templates.
 
 
